@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 
     <title>纯CSS实现翻书动画</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
     <style>
     *{
     /* 初始化 */
@@ -24,7 +23,7 @@ body{
 }
 .book{
     width: 400px;
-    height: 500px;
+    height:70vh;
     background-color: #fff;
     /* 开启3D效果 */
     transform-style: preserve-3d;
@@ -38,7 +37,7 @@ body{
 }
 /* 鼠标移入，阴影变化+旋转 */
 .book:hover{
-    transform: rotate(-10deg);
+    
     box-shadow: inset 20px 0 30px rgba(0,0,0,0.2),
     0 10px 100px rgba(0,0,0,0.3);
 }
@@ -54,7 +53,7 @@ body{
     /* 设置旋转元素的基点位置 */
     transform-origin: bottom;
     /* 沿X轴倾斜-45度 */
-    transform: skewX(-45deg);
+    
 }
 .book::after{
     content: "";
@@ -106,7 +105,7 @@ body{
     font-size: 40px;
 /*     font-family: "隶书"; */
 /*     line-height: 50px; */
-    letter-spacing: 5px;
+/*     letter-spacing: 5px; */
     display: flex;
     flex-direction: column;
 /*     justify-content: center; */
@@ -116,14 +115,14 @@ body{
     </style>
 </head>
 
-<body class="container">
+<body>
     <div class="book">
         <div class="cover">
             <span>葵花宝典</span>
         </div>
         <div class="content">
-		<h1 style="font-size:12px;margin-top:8px;">Котюша</h1>
-            <div style="font-size: 10px;">
+		<h1 style="font-size:12px;margin-top:7px;">Котюша</h1>
+            <div style="font-size: 8px;">
 		Расцветали яблони и груши<br>
 
 		Поплыли туманы над рекой<br>
@@ -185,7 +184,7 @@ body{
 		На высокий берег，на крутой<br>
 		</div>
 		
-		<div style="margin-top:5px;">
+		<div style="margin-top:3px;">
 			<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=560354768&auto=0&height=66"></iframe>
         
 		</div>
